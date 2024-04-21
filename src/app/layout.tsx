@@ -1,4 +1,5 @@
 
+
 import { ClerkProvider } from "@clerk/nextjs";
 import "@uploadthing/react/styles.css";
 import { Inter } from "next/font/google";
