@@ -1,8 +1,8 @@
-import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
-import Link from "next/link";
 import { ClerkProvider } from "@clerk/nextjs";
+import "@uploadthing/react/styles.css";
+import { Inter } from "next/font/google";
+import "~/styles/globals.css";
 import TopNav from "./_components/TopNav";
 
 const inter = Inter({
@@ -16,8 +16,6 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-
-
 export default function RootLayout({
   children,
 }: {
@@ -28,7 +26,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={`font-sans ${inter.variable} flex flex-col gap-4 `}>
           <TopNav />
-          {children}
+            {children}
         </body>
       </html>
     </ClerkProvider>
